@@ -22,7 +22,7 @@ if (p_type == 1)
 	%%%%%%PF PULSES%%%%%%
 	%%%%%%PF PULSES%%%%%%
 	ca_pulse_cf = addparameter(pfpc_model,'ca_pulse_cf', 'Value', 1500, 'ValueUnits', 'micromole/second', 'ConstantValue', false);%2000
-	num_pulse = 300;
+	num_pulse = 100;
 	pulse_times = [1:1:num_pulse]+10000;
 	cf_pulse_times = [1:1:num_pulse]+10000.1;
 	for i = 1:num_pulse
@@ -40,7 +40,7 @@ if (p_type == 1)
 
 elseif (p_type == 0)
 	%%%%%%300 PF PULSES ALONE%%%%%%
-	num_pulse = 100;
+	num_pulse = 300;
 	pulse_times = [1:1:num_pulse]+10000;
 	for i = 1:num_pulse
 		pulse_time = pulse_times(i);
