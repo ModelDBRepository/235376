@@ -1,0 +1,33 @@
+<html>
+<p>Model of Cerebellar PF-PC                                                   
+Long-Term Depression &amp; Potentiation                     
+                                                                           
+</p><p>developed by Andrew R. Gallimore   <br/>
+<a href="mailto:andrew.gallimore@oist.jp">andrew.gallimore@oist.jp</a>
+                     
+</p><p>December 2017                                                           
+for Matlab Simbiology     
+</p>
+<ol>
+<li/>LTD_LTP_Model.m
+
+<p>This is the model itself. Running this will build the model in Matlab Simbiology.
+However, for standard simulations of the model, it is advised to use RUN_LTD_LTP.m  
+</p>
+<li/> RUN_LTD_LTP.m     <br/>
+This code will run a standard LTD or LTP protocol and display some basic plots.
+You will be prompted to run either an LTP or LTD protocol.
+<p/>
+LTD selection generates (in 5 minutes or so), similar to subplots in figures 3A, 4C in the paper:<p/>
+<img src="./screenshotLTD.png"><p/>
+LTP selection generates this image (in 5 minutes or so) calcium traces similar to figure 6F in the paper:<p/>
+<img src="./screenshotLTP.png">
+</p>
+<li/> pf_pulse_ltp.m<br/>
+This is a function to generate the large number of PF stimuli as events in Simbiology
+</p>
+<li/> cf_pulse.m               <br/>
+This is a function to generate the large number of CF stimuli as events in Simbiology                                                                       
+</ol>
+</p>
+</html>
